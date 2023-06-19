@@ -1,1 +1,1 @@
-# daily algorithm studㅛ
+# daily algorithm study
