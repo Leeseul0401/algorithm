@@ -15,6 +15,7 @@ while end_index != N:
         T = T + end_index
     else:
         
+        
         start_index = start_index + 1
         T = T - start_index
         
@@ -26,7 +27,7 @@ while end_index != N:
 print(count)
 
 
-
+ 
 # n = int(input())
 # count = 1
 # start_index = 1
