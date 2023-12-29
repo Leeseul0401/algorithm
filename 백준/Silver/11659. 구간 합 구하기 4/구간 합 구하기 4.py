@@ -1,14 +1,16 @@
 import sys
+input = sys.stdin.readline
 
-N, M = map(int, sys.stdin.readline().split())
-numbers = list(map(int, sys.stdin.readline().split()))
-sum_list = [0]
+L, Q = map(int, input().split())
+arr = list(map(int, input().split()))
+sumArr = [0]
 temp = 0
 
-for i in numbers:
+for i in arr:
     temp = temp + i
-    sum_list.append(temp)
+    sumArr.append(temp)
     
-for i in range(M):
-    s, e = map(int, sys.stdin.readline().split())
-    print(sum_list[e] - sum_list[s - 1])    
+
+for i in range(Q):
+    start, end = map(int, input().split())
+    print(sumArr[end] - sumArr[start - 1])
